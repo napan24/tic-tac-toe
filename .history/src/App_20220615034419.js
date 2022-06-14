@@ -237,7 +237,7 @@ function App() {
       </div>
     </div>
     <div>
-    <button onClick={Clear} type="button" class="btn btn-dark">New Game</button>
+    <button onClick={Clear} type="button" class="btn btn-dark">Clear</button>
     </div>
   </>
   );

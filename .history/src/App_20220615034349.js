@@ -169,7 +169,6 @@ function App() {
     document.getElementById("r1column1").style.background="none";
     document.getElementById("r1column2").style.background="none";
     document.getElementById("r1column3").style.background="none";
-    document.getElementById("win").style.display="none";
   }
   const handleClick = event => {
     if(win==true){
@@ -237,7 +236,7 @@ function App() {
       </div>
     </div>
     <div>
-    <button onClick={Clear} type="button" class="btn btn-dark">New Game</button>
+    <button onClick={Clear} type="button" class="btn btn-dark">Clear</button>
     </div>
   </>
   );

@@ -17,6 +17,7 @@ import circle from './circle.png';
 function App() {
   const [board,setBoard]=useState([[" "," "," "],[" "," "," "],[" "," "," "]]);
   const [curr,setCurr]=useState(false);
+  const [c,setC]=useState(null);
   const [row,setRow]=useState(0);
   const [col,setCol]=useState(0);
   const [win,setWin]=useState(false);
@@ -32,7 +33,7 @@ function App() {
   }
   useEffect(() => {
     func();
-  }, [row,col]);
+  }, [board])
   useEffect(() => {
     if(win==true){
       document.getElementById("win").style.display="inline";
@@ -156,21 +157,6 @@ function App() {
       return;
     }
   }
-  function Clear(){
-    setWin(false);
-    setWinner("");
-    setBoard([[" "," "," "],[" "," "," "],[" "," "," "]]);
-    document.getElementById("r3column1").style.background="none";
-    document.getElementById("r3column2").style.background="none";
-    document.getElementById("r3column3").style.background="none";
-    document.getElementById("r2column1").style.background="none";
-    document.getElementById("r2column2").style.background="none";
-    document.getElementById("r2column3").style.background="none";
-    document.getElementById("r1column1").style.background="none";
-    document.getElementById("r1column2").style.background="none";
-    document.getElementById("r1column3").style.background="none";
-    document.getElementById("win").style.display="none";
-  }
   const handleClick = event => {
     if(win==true){
       return;
@@ -236,9 +222,7 @@ function App() {
         <button id="r3column3" onClick={handleClick} style={box}></button>
       </div>
     </div>
-    <div>
-    <button onClick={Clear} type="button" class="btn btn-dark">New Game</button>
-    </div>
+    <button onClick={Clear} type="button" class="btn btn-dark">Clear</button>
   </>
   );
 }
