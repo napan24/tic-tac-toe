@@ -1,0 +1,12 @@
+@media (max-width:500px) {
+    #mainblock{
+        position:"relative";
+        left:"10vw";
+    }
+}
+@media (max-width:2560px){
+    #mainblock{
+        position: relative;
+        left:"25vw"
+    }
+}

@@ -1,0 +1,20 @@
+@media (max-width:500px) {
+    #mainblock{
+        position:relative;
+        left:10vw;
+        display: inline-block;
+    }
+}
+@media (max-width:2560px){
+    #mainblock{
+        position: relative;
+        left:25vw;
+        display: inline-block;
+    }
+    style={{backgroundColor:"red",height:"50vmin",width:"50vmin",position:"absolute",right:"25%",top:"25%"}}
+    #win{
+        background-color: red;
+        height: 50vmin;
+
+    }
+}
