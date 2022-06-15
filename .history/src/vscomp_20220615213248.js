@@ -66,6 +66,11 @@ function Vscomp() {
   useEffect(() => {
     if(turn>0){
         Comp();
+        if(draw()){
+            console.log("a");
+            document.getElementById("draw").style.display="inline";
+            return;
+        }
     }
   }, [turn])
   function draw(){
@@ -119,11 +124,6 @@ function Vscomp() {
                 return;
             }
         }   
-    }
-    if(draw()){
-        console.log("a");
-        document.getElementById("draw").style.display="inline";
-        return;
     }
     setCurr(true);
   }

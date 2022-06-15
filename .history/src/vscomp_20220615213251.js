@@ -120,11 +120,6 @@ function Vscomp() {
             }
         }   
     }
-    if(draw()){
-        console.log("a");
-        document.getElementById("draw").style.display="inline";
-        return;
-    }
     setCurr(true);
   }
   function updatec(r,c){

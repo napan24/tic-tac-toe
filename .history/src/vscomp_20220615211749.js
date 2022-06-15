@@ -62,27 +62,12 @@ function Vscomp() {
       update(2,2);
     }
     setTurn(turn+1);
-};
+  };
   useEffect(() => {
     if(turn>0){
         Comp();
     }
   }, [turn])
-  function draw(){
-    let check=false;
-    for(let i=0;i<3;i++){
-        for(let j=0;j<3;j++){
-            if(board[i][j]!=" "){
-                check=true;
-                break;
-            }
-        }   
-    }
-    if(check){
-        return false;
-    }
-    return true;
-  }
   useEffect(() => {
     if(row1!=-1&&col1!=-1){
         updatec(row1,col1);
@@ -120,11 +105,6 @@ function Vscomp() {
             }
         }   
     }
-    if(draw()){
-        console.log("a");
-        document.getElementById("draw").style.display="inline";
-        return;
-    }
     setCurr(true);
   }
   function updatec(r,c){
@@ -140,38 +120,38 @@ function Vscomp() {
     }
     else if(r==0&&c==2){
         document.getElementById("13").style.background ="url("+cross+")";
-        document.getElementById("13").style.backgroundSize="cover";
-        document.getElementById("13").style.backgroundRepeat="no-repeat";
+        document.getElementById("12").style.backgroundSize="cover";
+        document.getElementById("12").style.backgroundRepeat="no-repeat";
     }
     if(r==1&&c==0){
         document.getElementById("21").style.background ="url("+cross+")";
-        document.getElementById("21").style.backgroundSize="cover";
-        document.getElementById("21").style.backgroundRepeat="no-repeat";
+        document.getElementById("12").style.backgroundSize="cover";
+        document.getElementById("12").style.backgroundRepeat="no-repeat";
     }
     else if(r==1&&c==1){
         document.getElementById("22").style.background ="url("+cross+")";
-        document.getElementById("22").style.backgroundSize="cover";
-        document.getElementById("22").style.backgroundRepeat="no-repeat";
+        document.getElementById("12").style.backgroundSize="cover";
+        document.getElementById("12").style.backgroundRepeat="no-repeat";
     }
     else if(r==1&&c==2){
         document.getElementById("23").style.background ="url("+cross+")";
-        document.getElementById("23").style.backgroundSize="cover";
-        document.getElementById("23").style.backgroundRepeat="no-repeat";
+        document.getElementById("12").style.backgroundSize="cover";
+        document.getElementById("12").style.backgroundRepeat="no-repeat";
     }
     if(r==2&&c==0){
         document.getElementById("31").style.background ="url("+cross+")";
-        document.getElementById("31").style.backgroundSize="cover";
-        document.getElementById("31").style.backgroundRepeat="no-repeat";
+        document.getElementById("12").style.backgroundSize="cover";
+        document.getElementById("12").style.backgroundRepeat="no-repeat";
     }
     else if(r==2&&c==1){
         document.getElementById("32").style.background ="url("+cross+")";
-        document.getElementById("32").style.backgroundSize="cover";
-        document.getElementById("32").style.backgroundRepeat="no-repeat";
+        document.getElementById("12").style.backgroundSize="cover";
+        document.getElementById("12").style.backgroundRepeat="no-repeat";
     }
     else if(r==2&&c==2){
         document.getElementById("33").style.background ="url("+cross+")";
-        document.getElementById("33").style.backgroundSize="cover";
-        document.getElementById("33").style.backgroundRepeat="no-repeat";
+        document.getElementById("12").style.backgroundSize="cover";
+        document.getElementById("12").style.backgroundRepeat="no-repeat";
     }
     setBoard((prevstate)=>{
       let newBoard=[...prevstate];
@@ -216,6 +196,7 @@ function Vscomp() {
       i--;
     }
     if(count>=2&&free==true){
+        console.log(1);
         setRow1(tempi);
         setCol1(tempj);
         return true;
@@ -248,6 +229,7 @@ function Vscomp() {
       j--;
     }
     if(count>=2&&free==true){
+        console.log(2);
         setRow1(tempi);
         setCol1(tempj);
         return true;
@@ -261,6 +243,7 @@ function Vscomp() {
         count++;
       }
       else if(board[i][j]==" "){
+        console.log(i,j);
         tempi=i;
         tempj=j;
         free=true;
@@ -278,6 +261,7 @@ function Vscomp() {
       else if(board[i][j]==" "){
         tempi=i;
         tempj=j;
+        console.log(i,j);
         free=true;
       }
       i++;
@@ -286,6 +270,7 @@ function Vscomp() {
     if(count>=2&&free==true){
         setRow1(tempi);
         setCol1(tempj);
+        console.log(3);
         return true;
     }
     free=false;
@@ -320,6 +305,7 @@ function Vscomp() {
       j--;
     }
     if(count>=2&&free==true){
+        console.log(4);
         setRow1(tempi);
         setCol1(tempj);
         return true;
@@ -461,6 +447,7 @@ function Vscomp() {
     }
   }, [win]);
   function Clear(){
+    console.log("a");
     setWin(false);
     setWinner("");
     setBoard([[" "," "," "],[" "," "," "],[" "," "," "]]);

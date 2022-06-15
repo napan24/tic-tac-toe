@@ -130,7 +130,7 @@
         left:5vw;
         display: inline-block;
     }
-    #win,#draw{
+    #win{
         position: absolute;
         left:25vw;
     }

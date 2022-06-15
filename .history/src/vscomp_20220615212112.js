@@ -26,6 +26,9 @@ function Vscomp() {
   const [row1,setRow1]=useState(-1);
   const [col1,setCol1]=useState(-1);
   const handleClick = event => {
+    if(draw){
+        return;
+    }
     if(win==true){
       return;
     }
@@ -62,7 +65,7 @@ function Vscomp() {
       update(2,2);
     }
     setTurn(turn+1);
-};
+  };
   useEffect(() => {
     if(turn>0){
         Comp();
@@ -119,11 +122,6 @@ function Vscomp() {
                 return;
             }
         }   
-    }
-    if(draw()){
-        console.log("a");
-        document.getElementById("draw").style.display="inline";
-        return;
     }
     setCurr(true);
   }
@@ -216,6 +214,7 @@ function Vscomp() {
       i--;
     }
     if(count>=2&&free==true){
+        console.log(1);
         setRow1(tempi);
         setCol1(tempj);
         return true;
@@ -248,6 +247,7 @@ function Vscomp() {
       j--;
     }
     if(count>=2&&free==true){
+        console.log(2);
         setRow1(tempi);
         setCol1(tempj);
         return true;
@@ -261,6 +261,7 @@ function Vscomp() {
         count++;
       }
       else if(board[i][j]==" "){
+        console.log(i,j);
         tempi=i;
         tempj=j;
         free=true;
@@ -278,6 +279,7 @@ function Vscomp() {
       else if(board[i][j]==" "){
         tempi=i;
         tempj=j;
+        console.log(i,j);
         free=true;
       }
       i++;
@@ -286,6 +288,7 @@ function Vscomp() {
     if(count>=2&&free==true){
         setRow1(tempi);
         setCol1(tempj);
+        console.log(3);
         return true;
     }
     free=false;
@@ -320,6 +323,7 @@ function Vscomp() {
       j--;
     }
     if(count>=2&&free==true){
+        console.log(4);
         setRow1(tempi);
         setCol1(tempj);
         return true;
@@ -461,6 +465,7 @@ function Vscomp() {
     }
   }, [win]);
   function Clear(){
+    console.log("a");
     setWin(false);
     setWinner("");
     setBoard([[" "," "," "],[" "," "," "],[" "," "," "]]);

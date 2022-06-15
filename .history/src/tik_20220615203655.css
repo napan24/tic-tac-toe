@@ -4,7 +4,7 @@
         left:2vw;
         display: inline-block;
     }
-    #win,#draw{
+    #win{
         position: absolute;
         left:25vw;
     }
@@ -13,9 +13,6 @@
         left:25vw;
     }
     #winner{
-        font-size: 5vw;
-    }
-    #winner1{
         font-size: 5vw;
     }
 }
@@ -25,7 +22,7 @@
         left:30vw;
         display: inline-block;
     }
-    #win,#draw{
+    #win{
         position: absolute;
         left:40vw;
     }
@@ -34,9 +31,6 @@
         left:40vw;
     }
     #winner{
-        font-size: 3vw;
-    }
-    #winner1{
         font-size: 3vw;
     }
 }
@@ -46,7 +40,7 @@
         left:25vw;
         display: inline-block;
     }
-    #win,#draw{
+    #win{
         position: absolute;
         left:40vw;
     }
@@ -55,9 +49,6 @@
         left:40vw;
     }
     #winner{
-        font-size: 3vw;
-    }
-    #winner1{
         font-size: 3vw;
     }
 }
@@ -67,18 +58,15 @@
         left:15vw;
         display: inline-block;
     }
-    #win,#draw{
+    #win{
         position: absolute;
         left:40vw;
     }
-    #winc{
+    #win{
         position: absolute;
         left:40vw;
     }
     #winner{
-        font-size: 3vw;
-    }
-    #winner1{
         font-size: 3vw;
     }
 }
@@ -88,18 +76,15 @@
         left:25vw;
         display: inline-block;
     }
-    #win,#draw{
+    #win{
         position: absolute;
         left:35vw;
     }
-    #winc{
+    #win{
         position: absolute;
         left:35vw;
     }
     #winner{
-        font-size: 3vw;
-    }
-    #winner1{
         font-size: 3vw;
     }
 }
@@ -109,18 +94,11 @@
         left:8vw;
         display: inline-block;
     }
-    #winc,#draw{
-        position: absolute;
-        left:25vw;
-    }
     #win{
         position: absolute;
         left:25vw;
     }
     #winner{
-        font-size: 3vw;
-    }
-    #winner1{
         font-size: 3vw;
     }
 }
@@ -130,18 +108,11 @@
         left:5vw;
         display: inline-block;
     }
-    #win,#draw{
-        position: absolute;
-        left:25vw;
-    }
-    #winc{
+    #win{
         position: absolute;
         left:25vw;
     }
     #winner{
-        font-size: 3vw;
-    }
-    #winner1{
         font-size: 3vw;
     }
 }

@@ -62,6 +62,11 @@ function Vscomp() {
       update(2,2);
     }
     setTurn(turn+1);
+    if(draw()){
+        console.log("a");
+        document.getElementById("draw").style.display="inline";
+        return;
+    }
 };
   useEffect(() => {
     if(turn>0){
@@ -119,11 +124,6 @@ function Vscomp() {
                 return;
             }
         }   
-    }
-    if(draw()){
-        console.log("a");
-        document.getElementById("draw").style.display="inline";
-        return;
     }
     setCurr(true);
   }
