@@ -246,6 +246,9 @@ function App() {
         <button id="r3column3" onClick={handleClick} style={box}></button>
       </div>
     </div>
+    <div>
+    <button onClick={Clear} type="button" class="btn btn-dark">New Game</button>
+    </div>
   </>
   );
 }

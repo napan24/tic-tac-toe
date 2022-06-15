@@ -215,16 +215,6 @@ function App() {
   }
   return (
     <>
-    <div id="win" class="alert alert-success" style={{ display: "none",zIndex:"2" }} role="alert">
-          {curr ? <FontAwesomeIcon icon={faCircle} size="3x" /> : <FontAwesomeIcon icon={faXmark} size="2x" />}
-          <span id="winner"> &nbsp; is the winner</span>
-        </div>
-      <nav class="navbar navbar-light bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" style={{color:"white"}}>Navbar</a>
-          <button onClick={Clear} type="button" class="btn btn-dark">New Game</button>
-        </div>
-      </nav>
     <div id="mainblock">
       <div id="win" class="alert alert-success" style={{display:"none",position:"absolute",left:"50%"}} role="alert">
       {curr?<FontAwesomeIcon icon={faCircle} size="3x"/>:<FontAwesomeIcon icon={faXmark} size="2x" />}
@@ -245,6 +235,9 @@ function App() {
         <button id="r3column2" onClick={handleClick} style={box}></button>
         <button id="r3column3" onClick={handleClick} style={box}></button>
       </div>
+    </div>
+    <div>
+    <button onClick={Clear} type="button" class="btn btn-dark">New Game</button>
     </div>
   </>
   );
