@@ -215,18 +215,18 @@ function App() {
   }
   return (
     <>
-    <div id="win" class="alert alert-success" style={{ display: "none", position: "absolute", left: "40%",zIndex:"2" }} role="alert">
-          {curr ? <FontAwesomeIcon icon={faCircle} size="2x" /> : <FontAwesomeIcon icon={faXmark} size="2x" />}
-          <span style={{ fontSize: "24px" }}> &nbsp; is the winner</span>
-        </div>
-      <nav class="navbar navbar-light bg-dark">
+      <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" style={{color:"white"}}>Navbar</a>
+          <a class="navbar-brand">Navbar</a>
           <button onClick={Clear} type="button" class="btn btn-dark">New Game</button>
         </div>
       </nav>
 
-      <div id="mainblock" style={{paddingTop:"2vh"}}>
+      <div id="mainblock">
+        <div id="win" class="alert alert-success" style={{ display: "none", position: "absolute", left: "50%" }} role="alert">
+          {curr ? <FontAwesomeIcon icon={faCircle} size="3x" /> : <FontAwesomeIcon icon={faXmark} size="2x" />}
+          <span style={{ fontSize: "24px" }}> &nbsp; is the winner</span>
+        </div>
         <div id="row1" style={{ display: "flex", justifyContent: "center", alignContent: "center" }}>
           <button id="r1column1" onClick={handleClick} style={box}></button>
           <button id="r1column2" onClick={handleClick} style={box}></button>
