@@ -43,7 +43,7 @@
 @media (max-width:1600px) and (min-width:1301px){
     #mainblock{
         position: relative;
-        left:15vw;
+        left:25vw;
         display: inline-block;
     }
     #win{

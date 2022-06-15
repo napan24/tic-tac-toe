@@ -12,7 +12,7 @@
         font-size: 5vw;
     }
 }
-@media (max-width:2560px) and (min-width:1901px){
+@media (max-width:2560px) and (min-width:1601px){
     #mainblock{
         position: relative;
         left:30vw;
@@ -20,21 +20,7 @@
     }
     #win{
         position: absolute;
-        left:40vw;
-    }
-    #winner{
-        font-size: 3vw;
-    }
-}
-@media (max-width:1900px) and (min-width:1601px){
-    #mainblock{
-        position: relative;
-        left:25vw;
-        display: inline-block;
-    }
-    #win{
-        position: absolute;
-        left:40vw;
+        left:45vw;
     }
     #winner{
         font-size: 3vw;
@@ -43,12 +29,12 @@
 @media (max-width:1600px) and (min-width:1301px){
     #mainblock{
         position: relative;
-        left:15vw;
+        left:25vw;
         display: inline-block;
     }
     #win{
         position: absolute;
-        left:40vw;
+        left:45vw;
     }
     #winner{
         font-size: 3vw;
@@ -57,12 +43,12 @@
 @media (max-width:1300px) and (min-width:1175px){
     #mainblock{
         position: relative;
-        left:25vw;
+        left:15vw;
         display: inline-block;
     }
     #win{
         position: absolute;
-        left:35vw;
+        left:50vw;
     }
     #winner{
         font-size: 3vw;

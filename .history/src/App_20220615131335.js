@@ -216,8 +216,8 @@ function App() {
   return (
     <>
     <div id="win" class="alert alert-success" style={{ display: "none",zIndex:"2" }} role="alert">
-          {curr ? <FontAwesomeIcon icon={faCircle} size="3x" /> : <FontAwesomeIcon icon={faXmark} size="2x" />}
-          <span id="winner"> &nbsp; is the winner</span>
+          {curr ? <FontAwesomeIcon icon={faCircle} size="2x" /> : <FontAwesomeIcon icon={faXmark} size="2x" />}
+          <span id="winner" style={{ fontSize: "24px" }}> &nbsp; is the winner</span>
         </div>
       <nav class="navbar navbar-light bg-dark">
         <div class="container-fluid">

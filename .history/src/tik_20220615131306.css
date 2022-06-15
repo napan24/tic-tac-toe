@@ -7,12 +7,10 @@
     #win{
         position: absolute;
         left:25vw;
-    }
-    #winner{
         font-size: 5vw;
     }
 }
-@media (max-width:2560px) and (min-width:1901px){
+@media (max-width:2560px) and (min-width:1601px){
     #mainblock{
         position: relative;
         left:30vw;
@@ -20,13 +18,11 @@
     }
     #win{
         position: absolute;
-        left:40vw;
-    }
-    #winner{
-        font-size: 3vw;
+        left:45vw;
+        font-size: 5vw;
     }
 }
-@media (max-width:1900px) and (min-width:1601px){
+@media (max-width:1600px) and (min-width:1301px){
     #mainblock{
         position: relative;
         left:25vw;
@@ -34,13 +30,10 @@
     }
     #win{
         position: absolute;
-        left:40vw;
-    }
-    #winner{
-        font-size: 3vw;
+        left:50vw;
     }
 }
-@media (max-width:1600px) and (min-width:1301px){
+@media (max-width:1300px) and (min-width:1175px){
     #mainblock{
         position: relative;
         left:15vw;
@@ -48,24 +41,7 @@
     }
     #win{
         position: absolute;
-        left:40vw;
-    }
-    #winner{
-        font-size: 3vw;
-    }
-}
-@media (max-width:1300px) and (min-width:1175px){
-    #mainblock{
-        position: relative;
-        left:25vw;
-        display: inline-block;
-    }
-    #win{
-        position: absolute;
-        left:35vw;
-    }
-    #winner{
-        font-size: 3vw;
+        left:50vw;
     }
 }
 @media (max-width:1174px) and (min-width:901px){
@@ -76,10 +52,7 @@
     }
     #win{
         position: absolute;
-        left:25vw;
-    }
-    #winner{
-        font-size: 3vw;
+        left:45vw;
     }
 }
 @media (max-width:900px) and (min-width:501px){
@@ -90,9 +63,6 @@
     }
     #win{
         position: absolute;
-        left:25vw;
-    }
-    #winner{
-        font-size: 3vw;
+        left:35vw;
     }
 }

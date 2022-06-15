@@ -26,7 +26,7 @@
         font-size: 3vw;
     }
 }
-@media (max-width:1900px) and (min-width:1601px){
+@media (max-width:1900px) and (min-width:1301px){
     #mainblock{
         position: relative;
         left:25vw;
@@ -34,21 +34,7 @@
     }
     #win{
         position: absolute;
-        left:40vw;
-    }
-    #winner{
-        font-size: 3vw;
-    }
-}
-@media (max-width:1600px) and (min-width:1301px){
-    #mainblock{
-        position: relative;
-        left:15vw;
-        display: inline-block;
-    }
-    #win{
-        position: absolute;
-        left:40vw;
+        left:45vw;
     }
     #winner{
         font-size: 3vw;
