@@ -1,0 +1,15 @@
+@media (max-width:5000px) and (min-width:2501px){
+    #title{
+        left:44vw;
+    }
+}
+@media (max-width:2500px) and (min-width:1601px){
+    #title{
+        left:40vw;
+    }
+}
+@media (max-width:1600px) and (min-width:1000px){
+    #title{
+        left:40vw;
+    }
+}

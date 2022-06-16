@@ -3,20 +3,16 @@ import './tik.css';
 import Home from './Home';
 import Two_player from './Two_player';
 import Vscomp from './Vscomp';
+import "./home.css";
+import { Outlet, Link } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from 'react';
-function App() {
+function Home() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/Vs" element={<Vscomp />} />
-          <Route path="/Two" element={<Two_player />} />
-        </Routes>
-      </BrowserRouter>
+
     </>
   );
 }
 
-export default App;
+export default Home;

@@ -10,9 +10,10 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/Vs" element={<Vscomp />} />
-          <Route path="/Two" element={<Two_player />} />
+          <Route path="/" element={<Home />}>
+            <Route path="/Vs" element={<Vscomp />} />
+            <Route path="/Two" element={<Two_player />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </>
