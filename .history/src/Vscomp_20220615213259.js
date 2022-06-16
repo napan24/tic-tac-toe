@@ -484,20 +484,20 @@ function Vscomp() {
   }
   return (
     <>
-    <div id="winc" className="alert alert-success" style={{ display: "none",zIndex:"2",position:"absolute" }} role="alert">
+    <div id="winc" class="alert alert-success" style={{ display: "none",zIndex:"2",position:"absolute" }} role="alert">
         <span id="winner1"> Computer&nbsp; is the winner</span>
     </div>
-    <div id="win" className="alert alert-success" style={{ display: "none",zIndex:"2" }} role="alert">
+    <div id="win" class="alert alert-success" style={{ display: "none",zIndex:"2" }} role="alert">
         <span id="winner"> Player&nbsp; is the winner</span>
     </div>
-      <nav className="navbar navbar-light bg-dark">
-        <div className="container-fluid">
-          <a className="navbar-brand" style={{color:"white"}}>Navbar</a>
-          <button onClick={Clear} type="button" className="btn btn-dark">New Game</button>
+      <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" style={{color:"white"}}>Navbar</a>
+          <button onClick={Clear} type="button" class="btn btn-dark">New Game</button>
         </div>
       </nav>
     <div id="mainblock">
-      <div id="win" className="alert alert-success" style={{display:"none",position:"absolute",left:"50%"}} role="alert">
+      <div id="win" class="alert alert-success" style={{display:"none",position:"absolute",left:"50%"}} role="alert">
       {curr?<FontAwesomeIcon icon={faCircle} size="3x"/>:<FontAwesomeIcon icon={faXmark} size="2x" />}
       <span style={{fontSize:"24px"}}> &nbsp; is the winner</span>  
       </div>

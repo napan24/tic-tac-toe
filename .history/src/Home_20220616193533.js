@@ -12,15 +12,12 @@ function Home() {
         <h5 id="title" style={{fontSize:"8vw",position:"absolute",color:"white",top:"3vh"}}>
             Tic Tac Toe 
         </h5>
-        
-        <Link to="Vs" ><button type="button" className="btn btn-dark" style={{width:"50vw",height:"100vh",backgroundColor:"red",fontSize:"5vw"}}>
-        Single Player
+        <button type="button" class="btn btn-dark" style={{width:"50vw",height:"100vh",backgroundColor:"red",fontSize:"5vw",textDecoration:"none"}}>
+        <Link style={{linkDecoration:"none"}} to="Vs">Single Player</Link>
         </button>
-        </Link>
-        <Link to="Two" style={{textDecoration:"none"}}><button type="button" className="btn btn-dark" style={{width:"50vw",height:"100vh",fontSize:"5vw"}}>
-        Two Player
+        <button type="button" class="btn btn-dark" style={{width:"50vw",height:"100vh",fontSize:"5vw"}}>
+        <Link to="Two">Two Player</Link>
         </button>
-        </Link>
     </>
   );
 }
